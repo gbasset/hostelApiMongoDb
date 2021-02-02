@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import morgan from 'morgan';
 dotenv.config();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 // morgan error support
 app.use(morgan('dev'))
